@@ -17,5 +17,16 @@ class DigitSumCalculatorTest {
         number = 1111;
         expected = 4;
         assertEquals(expected,DigitSumCalculator.CalculateSum(number) );
+
+
     }
+    @Test
+    void UsageTest(){
+        DigitSumCalculator.CalculateSum(111);
+        DigitSumCalculator.CalculateSum(1234);
+        int usageexpected = 2;
+        assertEquals(usageexpected, DigitSumCalculator.usage());
+
+    }
+
 }
